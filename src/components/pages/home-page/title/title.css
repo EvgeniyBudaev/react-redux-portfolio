@@ -1,0 +1,28 @@
+.home-page__titles {
+  top: 51%;
+  left: 30%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home-page__title {
+  text-transform: uppercase;
+  text-align: start;
+  font-size: 90px;
+  letter-spacing: 0.6vw;
+  color: #fff;
+  position: relative;
+  font-family: Butler, Helvetica, sans-serif;
+}
+
+.home-page__subtitle {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1.8vw;
+  position: relative;
+  font-family: Butler, Helvetica, sans-serif;
+}

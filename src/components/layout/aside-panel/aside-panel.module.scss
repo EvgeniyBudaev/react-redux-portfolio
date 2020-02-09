@@ -1,0 +1,22 @@
+.asidePanel {
+  position: fixed;
+  right: 0px;
+  top: 0;
+  width: 15%;
+  height: 100vh;
+  z-index: 5;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.asidePanel__panel {
+  border-left: 2px solid hsla(0, 0%, 56.9%, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.asidePanel:hover .asidePanel__panel {
+  background: #000;
+  transition: all 0.5s;
+}

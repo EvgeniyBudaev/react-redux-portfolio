@@ -1,0 +1,16 @@
+.asidePanel__text {
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+  transform: translate(-50%, -50%) rotate(-90deg);
+  white-space: nowrap;
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  color: #fff;
+  font-family: Butler, Helvetica, sans-serif;
+}

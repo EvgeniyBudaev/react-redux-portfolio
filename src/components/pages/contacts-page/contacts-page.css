@@ -1,0 +1,346 @@
+/* CONTACTS */
+.contacts-details {
+  min-width: 100%;
+  min-height: 100%;
+  background: #fff;
+  display: flex;
+  line-height: 1.15;
+  font-family: Candara, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+/* contacts-image */
+.contacts-details__photo {
+  width: 35%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.distortion {
+  width: 100%;
+  flex-basis: 35%;
+}
+
+.img-box img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.img-box img:nth-child(1) {
+  filter: blur(10px);
+  opacity: 1;
+  transform: translateX(50%) scaleX(2);
+}
+
+.img-box:hover img:nth-child(1) {
+  filter: blur(0);
+  opacity: 1;
+  transform: translateX(0) scaleX(1);
+}
+
+.img-box:hover img:nth-child(2) {
+  filter: blur(10px);
+  opacity: 0;
+  transform: translateX(-50%) scaleX(2);
+}
+
+/* end contacts-image */
+
+/* contacts-content */
+.contacts-details__content {
+  width: 50%;
+  padding-top: 100px;
+  padding-left: 5%;
+  padding-right: 1%;
+}
+
+.content__box-title .box__title {
+  margin-right: 130px;
+  width: 165px;
+  flex-shrink: 0;
+}
+
+.content__box {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.content__box .box__details {
+  width: 100%;
+}
+
+.content__box-title .content__title {
+  margin: 0 0 0 -4px !important;
+}
+
+.content__title {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__title-sublead.content__title-email {
+  position: relative;
+  top: 0;
+  left: -100px;
+}
+
+.content__title-lead {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: Playfair Display, serif;
+  font-weight: 400;
+  line-height: 100px;
+  color: #000;
+}
+
+.content__title-sublead {
+  margin: 0;
+  padding: 0;
+  font-size: 47px;
+  line-height: 50px;
+  color: #858585;
+  text-transform: uppercase;
+  font-family: Playfair Display, serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.content__box .box__title {
+  border-top: 1px dotted #b4b4b4;
+  width: 165px;
+  margin-right: 130px;
+  flex-basis: 165px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.content__box-title .box__title {
+  border: none;
+}
+
+.content__box .box__title > h3 {
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.box__details-contact li {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 28px;
+}
+/* end contacts-content */
+
+/************************
+*************************
+************************/
+
+/* MEDIA*/
+
+@media (max-width: 1800px) {
+  .content__box .box__title {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .contacts-details__content {
+    padding-left: 1%;
+  }
+  .content__box .box__title {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .content__title-lead {
+    font-size: 36px;
+  }
+  .content__title-sublead {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .contacts-details__content {
+    padding-left: 1%;
+  }
+  .content__box .box__title {
+    margin-right: 0;
+  }
+  .content__title-sublead.content__title-phone {
+    position: relative;
+    top: 0;
+    left: -40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content__title-lead {
+    font-size: 24px;
+  }
+  .content__title-sublead {
+    font-size: 24px;
+  }
+  .contacts-details__content {
+    padding-left: 1%;
+  }
+  .content__box .box__title {
+    margin-right: -10px;
+  }
+  .content__title-sublead.content__title-email {
+    left: -65px;
+  }
+  .content__title-sublead.content__title-phone {
+    position: relative;
+    top: 0;
+    left: -20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content__title-lead {
+    font-size: 20px;
+    position: relative;
+    left: -30px;
+  }
+  .content__title-sublead {
+    font-size: 20px;
+  }
+  .contacts-details__content {
+    padding-left: 16%;
+    padding-top: 0;
+    width: 85%;
+  }
+  .content__box .box__title {
+    margin-right: -10px;
+  }
+  .content__title-sublead.content__title-email {
+    left: -80px;
+  }
+  .content__title-sublead.content__title-phone {
+    position: relative;
+    top: 0;
+    left: -50px;
+  }
+  .content__box .box__title > h3 {
+    font-size: 12px;
+  }
+  li {
+    font-size: 14px;
+  }
+  .contacts-details {
+    flex-direction: column;
+  }
+  .contacts-details__photo {
+    height: 50vh;
+    width: 85%;
+  }
+  .box__details-contact li {
+    padding-right: 25%;
+  }
+}
+
+@media (max-width: 650px) {
+  .contacts-details__content {
+    padding-left: 8%;
+  }
+  .aside-panel {
+    padding-right: 15px;
+  }
+  .contacts-details__photo {
+    width: 87%;
+  }
+  .sidebar {
+    margin-left: -8%;
+    width: 105%;
+  }
+}
+@media (max-width: 520px) {
+  .sidebar-cover {
+    display: none;
+  }
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5 {
+    top: 10%;
+    left: 45%;
+    text-align: center;
+  }
+  .link2 {
+    margin-top: 110px;
+  }
+  .link4 {
+    margin-top: 217px;
+  }
+  .link5 {
+    margin-top: 323px;
+  }
+}
+@media (max-width: 480px) {
+  .contacts-details__content {
+    padding-left: 2%;
+  }
+  .box__details-contact li {
+    padding-right: 10%;
+  }
+}
+@media (max-width: 420px) {
+  .hamburger {
+    width: 30px;
+  }
+  .content__box.content__box-text {
+    flex-direction: column;
+  }
+  .content__box .box__title {
+    flex-basis: 140px;
+  }
+  .aside-panel__controls {
+    left: 37%;
+  }
+  .github-socials {
+    left: 40px;
+    bottom: 40px;
+  }
+  .box__details-contact li {
+    padding-right: 5%;
+  }
+}
+@media (max-width: 380px) {
+  .content__box .box__title {
+    flex-basis: 120px;
+  }
+  .contacts-details__photo {
+    width: 87%;
+  }
+  .mousey {
+    padding: 8px 10px;
+  }
+  .box__details-contact li {
+    padding-right: 5%;
+  }
+}
+@media (max-width: 340px) {
+  .content__box .box__title {
+    flex-basis: 105px;
+  }
+}

@@ -1,0 +1,24 @@
+.github-socials {
+  position: fixed;
+  left: 70px;
+  bottom: 70px;
+  font-size: 30px;
+  z-index: 5;
+}
+
+ .section2.github-socials {
+   position: absolute; 
+}
+
+.github-socials__social {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  opacity: 1;
+  text-align: center;
+  justify-content: center;
+}
+
+.icon {
+  color: #fff;
+}
