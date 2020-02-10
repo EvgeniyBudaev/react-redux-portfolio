@@ -19,14 +19,14 @@
   margin: 5px auto;
 }
 
-.hamburger.on .hamburger_span.one {
+.hamburger.on .one {
   transform: rotate(45deg) translateX(2px) translateY(4px);
 }
 
-.hamburger.on .hamburger_span.two {
+.hamburger.on .two {
   opacity: 0;
 }
 
-.hamburger.on .hamburger_span.three {
+.hamburger.on .three {
   transform: rotate(-45deg) translateX(8px) translateY(-10px);
 }

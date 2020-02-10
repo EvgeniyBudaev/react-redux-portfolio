@@ -21,7 +21,7 @@ export default class App extends Component {
           <AsidePanel />
           <Logo />
           <IconGitHub />
-          <Sidebar />
+          {/* <Sidebar /> */}
           <Switch>
             <Route exact path={ROUTES.HOME}>
               <HomePage></HomePage>
