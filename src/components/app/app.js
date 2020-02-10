@@ -16,8 +16,7 @@ import { ROUTES } from '../../util/routes';
 class App extends Component {
 
   state = {
-    onSidebar: false,
-    showSidebar: false
+    onSidebar: false
   };
 
   onHandleClickHamburger = () => {
