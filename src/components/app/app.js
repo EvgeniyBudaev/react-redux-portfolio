@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import * as classes from "./app.module.scss";
 
@@ -13,10 +13,11 @@ import AboutPage from '../pages/about-page';
 import ContactsPage from '../pages/contacts-page';
 import { ROUTES } from '../../util/routes';
 
-export default class App extends Component {
+class App extends Component {
 
   state = {
-    onSidebar: false
+    onSidebar: false,
+    showSidebar: false
   };
 
   onHandleClickHamburger = () => {
@@ -27,14 +28,22 @@ export default class App extends Component {
     });
   };
 
+  onClickLinkFromSidebar = () => {
+    this.setState(({onSidebar}) => {
+      return {
+        onSidebar: !onSidebar     
+      }
+    });
+  }
+
   render() {
     return (
-      <Router>
+      <div>
         <div>
           <AsidePanel onHandleClickHamburger={this.onHandleClickHamburger} onSidebar={this.state.onSidebar} />
           <Logo />
           <IconGitHub />
-          <Sidebar onSidebar={this.state.onSidebar} />
+          <Sidebar onSidebar={this.state.onSidebar} onClickLinkFromSidebar={this.onClickLinkFromSidebar} showSidebar={this.state.showSidebar} />
           <Switch>
             <Route exact path={ROUTES.HOME}>
               <HomePage onSidebar={this.state.onSidebar}></HomePage>
@@ -53,7 +62,9 @@ export default class App extends Component {
             </Route> */}
           </Switch>
         </div>
-      </Router>
+      </div>
     );
   }
 }
+
+export default App;

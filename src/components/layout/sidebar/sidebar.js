@@ -13,20 +13,20 @@ class Sidebar extends Component {
 
     if(onSidebar) {
       classNamesSidebar += ' active';
-    }
+    } 
 
     return (
       <div className={classNamesSidebar}>
-        <Link to={ROUTES.HOME} className="link1 hover-target">
+        <Link to={ROUTES.HOME} className="link1 hover-target" onClick={this.props.onClickLinkFromSidebar}>
           Home
         </Link>
-        <Link to={ROUTES.WORKS} className="link2 hover-target">
+        <Link to={ROUTES.WORKS} className="link2 hover-target" onClick={this.props.onClickLinkFromSidebar}>
           Works
         </Link>
-        <Link to={ROUTES.ABOUT} className="link4 hover-target">
+        <Link to={ROUTES.ABOUT} className="link4 hover-target" onClick={this.props.onClickLinkFromSidebar}>
           About
         </Link>
-        <Link to={ROUTES.CONTACTS} className="link5 hover-target">
+        <Link to={ROUTES.CONTACTS} className="link5 hover-target" onClick={this.props.onClickLinkFromSidebar}>
           Contacts
         </Link>
 
