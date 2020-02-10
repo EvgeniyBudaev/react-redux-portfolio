@@ -5,14 +5,14 @@ import sample from "./motionplace.mp4";
 import Title from './title';
 import Navbar from './navbar';
 
-const HomePage = () => {
+const HomePage = ({ onSidebar }) => {
   return (
     <div className={classes.HomePage}>
       <video className={classes.videoBG} autoPlay muted loop>
         <source src={sample} type="video/mp4"></source>
       </video>
       <Title />
-      <Navbar />
+      <Navbar onSidebar={onSidebar} />
     </div>
   );
 };

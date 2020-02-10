@@ -1,25 +1,22 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import $ from "jquery";
 
 import "./sidebar.css";
 
 import { ROUTES } from "../../../util/routes";
 
 class Sidebar extends Component {
-  componentDidMount() {
-    $(".hamburger").click(function() {
-      $(this).toggleClass("on");
-      $(".sidebar").toggleClass("active");
-      $(".nav-menu").toggleClass("off");
-      $(".aside-panel__controls").toggleClass("off");
-      $(".about__slider-wrapper").toggleClass("off");
-    });
-  }
 
   render() {
+    const { onSidebar } = this.props;
+    let classNamesSidebar = 'sidebar';
+
+    if(onSidebar) {
+      classNamesSidebar += ' active';
+    }
+
     return (
-      <div className="sidebar" id="sidebar">
+      <div className={classNamesSidebar}>
         <Link to={ROUTES.HOME} className="link1 hover-target">
           Home
         </Link>

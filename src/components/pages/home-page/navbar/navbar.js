@@ -6,10 +6,16 @@ import * as classes from './navbar.module.scss';
 
 import { ROUTES } from '../../../../util/routes';
 
-const Navbar = () => {
+const Navbar = ({ onSidebar }) => {
+  let classNamesNavbar = 'nav-menu show';
+
+  if(onSidebar) {
+    classNamesNavbar += ' off';
+  }
+
   return (
     <nav>
-      <div className="nav-menu show">
+      <div className={classNamesNavbar}>
         <div className="nav-menu__container">
           <ul className="nav-menu__items  nav-menu__items-delay  animated fadeInUp">
             <li className="nav-menu__item hover-target">

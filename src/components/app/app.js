@@ -14,17 +14,30 @@ import ContactsPage from '../pages/contacts-page';
 import { ROUTES } from '../../util/routes';
 
 export default class App extends Component {
+
+  state = {
+    onSidebar: false
+  };
+
+  onHandleClickHamburger = () => {
+    this.setState(({onSidebar}) => {
+      return {
+        onSidebar: !onSidebar       
+      }
+    });
+  };
+
   render() {
     return (
       <Router>
         <div>
-          <AsidePanel />
+          <AsidePanel onHandleClickHamburger={this.onHandleClickHamburger} onSidebar={this.state.onSidebar} />
           <Logo />
           <IconGitHub />
-          {/* <Sidebar /> */}
+          <Sidebar onSidebar={this.state.onSidebar} />
           <Switch>
             <Route exact path={ROUTES.HOME}>
-              <HomePage></HomePage>
+              <HomePage onSidebar={this.state.onSidebar}></HomePage>
             </Route>
             <Route exact path={ROUTES.WORKS}>
               <WorksPage></WorksPage>

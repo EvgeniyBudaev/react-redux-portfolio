@@ -1,22 +1,30 @@
 import React from "react";
 
-import * as classes from "./aside-panel-controls.module.scss";
+import './aside-panel-controls.css';
 
-const AsidePanelControls = () => {
+const AsidePanelControls = ({ onSidebar }) => {
+  let classNamesAsidePanelControls = 'aside-panel__controls';
+
+  if(onSidebar) {
+    classNamesAsidePanelControls += ' off';
+  }
+
   return (
-    <div className={classes.asidePanel__controls}>
-      <div className={classes.magneticBlock}>
-        <button className={classes.roundButton}>
-          <div className={classes.roundButton__circle}>
-            <div className={classes.scrollDowns}>
-              <div className={classes.mousey}>
-                <div className={classes.scroller}></div>
+
+    <div className={classNamesAsidePanelControls}>
+              <div className="magnetic-block">
+                <button className="round-button">
+                  <div className="round-button__circle">
+                    <div className="scroll-downs">
+                      <div className="mousey">
+                        <div className="scroller"></div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
               </div>
             </div>
-          </div>
-        </button>
-      </div>
-    </div>
+
   );
 };
 
