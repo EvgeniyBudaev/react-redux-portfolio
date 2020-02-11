@@ -1,0 +1,14 @@
+.content img {
+  max-width: 300px;
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+}
+
+.content a:hover {
+  opacity: 0.5;
+}
+
+.item {
+  color: white;
+}

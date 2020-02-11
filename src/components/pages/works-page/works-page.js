@@ -1,28 +1,38 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
-import $ from "jquery";
 
 import "./works-page.css";
 
-import rosa from './rosa.jpg';
-import { ROUTES } from '../../../util/routes';
+import rosa from './images/rosa.jpg';
+import Card from './card';
 
 class WorksPage extends Component {
-  componentDidMount() {
-// $(document).ready(function() {
-//   $(".grid").isotope({
-//     itemSelector: ".item"
-//   });
 
-//   $(".filter-button-group").on("click", "li", function() {
-//     var filterValue = $(this).attr("data-filter");
-//     $(".grid").isotope({
-//       filter: filterValue
-//     });
-//     $(".filter-button-group li").removeClass("active");
-//     $(this).addClass("active");
-//   });
-// });
+  state = {
+    visibility: "all",
+    cards: [
+      { images: rosa, category: 'pageProofs', id: 1 }
+
+    ]
+  };
+
+  cardFilterAction = ( event ) => {
+    this.setState({
+      visibility: event.target.value
+    });
+  };
+
+  renderCards = () => {
+    return this.state.cards
+      .filter( ( card ) => {
+        return (this.state.visibility !== 'all') ? (card.category === this.state.visibility ) : true;       
+      })
+      .map( ( card ) => {
+        return (<Card images={card.images} category={card.category} id={card.id} />);
+      });
+  };
+  
+  componentDidUpdate() {
+    this.renderCards()
   }
 
   render() {
@@ -35,53 +45,68 @@ class WorksPage extends Component {
             <div className="filters filter-button-group">
               <ul className="filter-button-group__items">
                 <h4>
+
                   <li
-                    className="filter-button-group__item active hover-target"
-                    data-filter="*"
-                  >
-                    All
+                    className="filter-button-group__item active hover-target">
+                    <button value="all" 
+                            onClick={this.cardFilterAction}
+                            className="button active ">
+                      All
+                    </button>  
+                  </li>
+
+                  <li
+                    className="filter-button-group__item hover-target">
+                    <button value="react" 
+                            onClick={this.cardFilterAction}
+                            className="button">
+                      React
+                    </button>                    
+                  </li>
+
+                  <li
+                    className="filter-button-group__item hover-target">
+                   <button value="vue" 
+                           onClick={this.cardFilterAction}
+                           className="button">
+                     Vue
+                    </button>
                   </li>
                   <li
-                    className="filter-button-group__item hover-target"
-                    data-filter=".react"
-                  >
-                    React
+                    className="filter-button-group__item hover-target">
+                    <button value="javascript" 
+                            onClick={this.cardFilterAction}
+                            className="button">
+                     JavaScript
+                    </button>
                   </li>
+
                   <li
-                    className="filter-button-group__item hover-target"
-                    data-filter=".vue"
-                  >
-                    Vue
+                    className="filter-button-group__item hover-target">
+                    <button value="java" 
+                            onClick={this.cardFilterAction}
+                            className="button">
+                     Java
+                    </button>
                   </li>
+
                   <li
-                    className="filter-button-group__item hover-target"
-                    data-filter=".javascript"
-                  >
-                    Javascript
+                    className="filter-button-group__item hover-target">
+                      <button value="pageProofs" 
+                              onClick={this.cardFilterAction}
+                              className="button">
+                     Page-proofs
+                    </button>                
                   </li>
-                  <li
-                    className="filter-button-group__item hover-target"
-                    data-filter=".java"
-                  >
-                    Java
-                  </li>
-                  <li
-                    className="filter-button-group__item hover-target"
-                    data-filter=".pageProofs"
-                  >
-                    Page-proofs
-                  </li>
+
                 </h4>
               </ul>
             </div>
 
-            <div className="grid">
-              <div className="content pageProofs item">
-                <Link to={ROUTES.ROSA} target="_blank">
-                  <img src={rosa}></img>
-                </Link>
-              </div>
+            <div className="grid">             
+              { this.renderCards() }
             </div>
+
           </div>
         </section>
       </div>
