@@ -1,11 +1,15 @@
-import React from "react";
-
+import React, { Component } from "react";
 import "./about-page.css";
+import portrait1 from "./images/portrait1.jpg";
+import portrait2 from "./images/portrait2.jpg";
+import ImageGallery from './image-gallery';
 
-import portrait1 from "./portrait1.jpg";
-import portrait2 from "./portrait2.jpg";
+class AboutPage extends Component {
+  componentDidMount(){
 
-const AboutPage = () => {
+  };
+
+  render() {
   return (
     <div className="about-details">
       <div className="about-details__photo animate-left">
@@ -215,33 +219,18 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+
         {/* slider  */}
         <div className="about__slider-wrapper animate-bottom">
-          <ul className="pgwSlider">
-            <li>
-              <img
-                src="../../images/javascript.png"
-                alt="Certificate JavaScript Junior"
-              ></img>
-            </li>
-            <li>
-              <img
-                src="../../images/java.png"
-                alt="Certificate Java Junior"
-              ></img>
-            </li>
-            <li>
-              <img
-                src="../../images/javaOtus.jpeg"
-                alt="Certificate Java Otus"
-              ></img>
-            </li>
-          </ul>
+        <ImageGallery />
         </div>
         {/* end slider */}
+
       </div>
     </div>
   );
 };
+};
+
 
 export default AboutPage;
