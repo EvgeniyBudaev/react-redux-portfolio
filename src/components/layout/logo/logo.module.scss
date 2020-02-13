@@ -1,7 +1,7 @@
 .header__logo {
   position: fixed;
   left: 70px;
-  top: 70px;
+  top: 35px;
 }
 .section2.header__logo {
   position: absolute;
@@ -10,4 +10,13 @@
   display: block;
   width: 100px;
   border-style: none;
+}
+
+/* MEDIA */
+
+@media (max-width: 414px) {
+  .header__logo {
+    left: 25px;
+    top: 20px;
+  }
 }

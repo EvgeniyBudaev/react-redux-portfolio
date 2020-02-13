@@ -138,3 +138,31 @@ input[type="checkbox"]:checked ~ section {
     background: #fff;
   }
 }
+
+@media (max-width: 520px) {
+  .sidebar-cover {
+    display: none;
+  }
+  .link1,
+  .link2,
+  .link3,
+  .link4,
+  .link5 {
+    top: 10%;
+    left: 45%;
+    text-align: center;
+  }
+  .link2 {
+    margin-top: 110px;
+  }
+  .link4 {
+    margin-top: 217px;
+  }
+  .link5 {
+    margin-top: 323px;
+  }
+}
+
+@media (max-width: 320px) {
+
+}

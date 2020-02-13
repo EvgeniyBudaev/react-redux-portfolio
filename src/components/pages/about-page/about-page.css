@@ -9,8 +9,7 @@
 }
 
 .about-details__photo {
-  max-width: 675px;
-  width: 100%;
+  width: 35%;
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -51,12 +50,10 @@
 }
 
 .about-details__content {
-  width: 100%;
-  display: block;
+  width: 50%;
   padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 90px;
-  padding-right: 320px;
+  padding-left: 5%;
+  padding-right: 16%;
 }
 
 .content__box-title .box__title {
@@ -168,11 +165,16 @@
   }
   .about-details__photo {
     height: 60vh;
+    width: 85%;
+  }
+  .about-details__content {
+    padding-right: 1%;
+    padding-top: 2%;
   }
 }
 @media (max-width: 1180px) {
   .about-details__content {
-    padding-right: 180px;
+    width: 75%;
   }
 }
 @media (max-width: 800px) {
@@ -186,13 +188,26 @@
   .about-details {
     padding-right: 120px;
   }
+  .about-details__photo {
+    width: 98%;
+  }
 }
 @media (max-width: 600px) {
   .about-details {
     padding-right: 87px;
   }
+  .about-details__photo {
+    width: 97.5%;
+  }
 }
 @media (max-width: 520px) {
+  .content__box-title .box__title {
+    margin-right: 130px;
+    width: 100px;
+    flex-basis: 165px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
   .sidebar-cover {
     display: none;
   }
@@ -221,22 +236,37 @@
     display: none;
   }
   .content__box .box__title {
-    flex-basis: 95px;
+    flex-basis: 0;
   }
   .content__box {
     margin-bottom: 70px;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .content__box .box__details {
     width: 100%;
   }
+  .about-details__photo {
+    width: 100%;
+  }
+  .content__title .content__title-lead {
+    font-size: 30px;
+  }
 }
 @media (max-width: 450px) {
+  /* .content__box {
+    flex-direction: column;
+  } */
   .about-details__photo {
     height: 50vh;
+    width: 98%;
   }
   .about-details {
     padding-right: 66px;
+  }
+}
+@media (max-width: 375px) {
+  .about-details__photo {
+    width: 100%;
   }
 }
 @media (max-width: 370px) {
@@ -247,4 +277,16 @@
     width: 40px;
   }
 }
+@media (max-width: 370px) {
+  .about-details__photo {
+    width: 103%;
+  }
+}
+@media (max-width: 320px) {
+
+}
+
+
+
+
 

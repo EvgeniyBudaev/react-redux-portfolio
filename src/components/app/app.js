@@ -22,7 +22,7 @@ class App extends Component {
   onHandleClickHamburger = () => {
     this.setState(({onSidebar}) => {
       return {
-        onSidebar: !onSidebar       
+        onSidebar: !onSidebar
       }
     });
   };
@@ -30,7 +30,7 @@ class App extends Component {
   onClickLinkFromSidebar = () => {
     this.setState(({onSidebar}) => {
       return {
-        onSidebar: !onSidebar     
+        onSidebar: !onSidebar
       }
     });
   }

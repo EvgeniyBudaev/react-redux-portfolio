@@ -18,6 +18,7 @@ const ContactsPage = () => {
         <div className="content__box content__box-title">
           <div className="box__title"></div>
           <div className="box__details box__details-contact">
+            <ul>
             <div className="content__title animated zoomIn slow">
               <h1 className="content__title-lead">Contact us</h1>
             </div>
@@ -29,6 +30,7 @@ const ContactsPage = () => {
                 +7 (925) 068-30-60
               </div>
             </div>
+            </ul>
           </div>
         </div>
         <div className="content__box content__box-text animate-bottom">

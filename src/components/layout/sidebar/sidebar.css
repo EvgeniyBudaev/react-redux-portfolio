@@ -58,6 +58,7 @@
   font-size: 50px;
   font-weight: 700;
   font-family: Butler, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
 .link1:hover,
@@ -140,4 +141,35 @@
   transform: translate(-50%, -50%);
   opacity: 0.05;
   color: #fff;
+}
+
+/* MEDIA */
+
+@media (max-width: 520px) {
+  .sidebar.active .link1,
+  .sidebar.active .link2,
+  .sidebar.active .link4,
+  .sidebar.active .link5 {
+    top: 25%;
+    left: 45%;
+    text-align: center;
+  }
+  .link2 {
+    margin-top: 110px;
+  }
+  .link4 {
+    margin-top: 217px;
+  }
+  .link5 {
+    margin-top: 323px;
+  }
+}
+
+@media (max-width: 320px) {
+  .sidebar.active .link1,
+  .sidebar.active .link2,
+  .sidebar.active .link4,
+  .sidebar.active .link5 {
+    top: 15%;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 
 import * as classes from './home-page.module.scss';
+import './home-page.css';
 import sample from "./motionplace.mp4";
 import Title from './title';
 import Navbar from './navbar';
@@ -14,6 +15,7 @@ const HomePage = ({ onSidebar }) => {
       <Title />
       <Navbar onSidebar={onSidebar} />
     </div>
+
   );
 };
 
