@@ -10,6 +10,7 @@ In the project directory, you can run:
 ### `npm install jquery`
 ### `npm install prop-types`
 ### `npm install redux react-redux redux-thunk`
+### `npm install --save react-id-swiper@latest swiper@latest`
 ### `npm start`
 
 Runs the app in the development mode.<br />

@@ -12,6 +12,8 @@ import WorksPage from '../pages/works-page';
 import AboutPage from '../pages/about-page';
 import ContactsPage from '../pages/contacts-page';
 import { ROUTES } from '../../util/routes';
+import Cursor from '../cursor';
+import PageSlider from '../page-slider';
 
 class App extends Component {
 
@@ -39,6 +41,7 @@ class App extends Component {
     return (
       <div>
         <div>
+          <Cursor />
           <AsidePanel onHandleClickHamburger={this.onHandleClickHamburger} onSidebar={this.state.onSidebar} />
           <Logo />
           <IconGitHub />
@@ -46,6 +49,7 @@ class App extends Component {
           <Switch>
             <Route exact path={ROUTES.HOME}>
               <HomePage onSidebar={this.state.onSidebar}></HomePage>
+              <ContactsPage></ContactsPage>
             </Route>
             <Route exact path={ROUTES.WORKS}>
               <WorksPage></WorksPage>
