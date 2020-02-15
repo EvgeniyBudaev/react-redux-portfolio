@@ -7,7 +7,6 @@ In the project directory, you can run:
 ### `npm install`
 ### `npm install react-router-dom`
 ### `npm install node-sass`
-### `npm install jquery`
 ### `npm install prop-types`
 ### `npm install redux react-redux redux-thunk`
 ### `npm install --save react-id-swiper@latest swiper@latest`
