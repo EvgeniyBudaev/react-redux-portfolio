@@ -42,8 +42,7 @@ const ContactsPage = () => {
           <div className="box__details box__details-contact">
             <ul>
               <li>
-                Thank you for reading my resume! I await your comments! To the
-                connection!
+                Спасибо Вам за просморт моего резюме! Жду Ваших предложений по работе ;)
               </li>
             </ul>
           </div>

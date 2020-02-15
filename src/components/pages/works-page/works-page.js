@@ -40,7 +40,7 @@ class WorksPage extends Component {
       <div className="container">
         <section className="section-works">
           <div className="works-wrapper">
-            <h1 className="works-title">Works</h1>
+            <h1 className="works-title">Галерея работ</h1>
 
             <div className="filters filter-button-group">
               <ul className="filter-button-group__items">
@@ -51,7 +51,7 @@ class WorksPage extends Component {
                     <button value="all" 
                             onClick={this.cardFilterAction}
                             className="button active ">
-                      All
+                      Все
                     </button>  
                   </li>
 

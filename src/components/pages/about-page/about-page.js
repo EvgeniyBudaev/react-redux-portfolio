@@ -24,29 +24,28 @@ class AboutPage extends Component {
           <div className="box__title"></div>
           <div className="box__details box__details-about">
             <div className="content__title animated zoomIn slow">
-              <h1 className="content__title-lead">Hi</h1>
+              <h1 className="content__title-lead">Привет</h1>
             </div>
           </div>
         </div>
 
         <div className="content__box animated zoomIn slow">
           <div className="box__title">
-            <h3>About</h3>
+            <h3>Обо мне</h3>
           </div>
           <div className="box__details box__details-about">
-            <p>
-              My name is Evgeniy. I live in Moscow. I specialize mainly in
-              front-end development. I consider it an ideal job where I will be
-              useful in the development of your project, as a developer, where I
-              will feel part of the team. I am very interested in knowing my
-              clients' expectations and translating them into my projects.
+            <p>          
+              Меня зовут Евгений. Проживаю в Москве. Я специализируюсь в основном на
+              фронт-энд разработке. Я считаю идеальной работой, где я буду
+              полезен при разработке Вашего проекта, как разработчик, где я
+              буду чувствовать себя частью команды.
             </p>
           </div>
         </div>
 
         <div className="content__box animated zoomIn slow">
           <div className="box__title">
-            <h3>Skills / Frontend</h3>
+            <h3>Навыки / Frontend</h3>
           </div>
           <div className="box__details box__details-about">
             <div className="tag">
@@ -84,7 +83,7 @@ class AboutPage extends Component {
 
         <div className="content__box animate-bottom">
           <div className="box__title">
-            <h3>Skills / BackEnd</h3>
+            <h3>Навыки / BackEnd</h3>
           </div>
           <div className="box__details box__details-about">
             <div className="tag">
@@ -120,68 +119,67 @@ class AboutPage extends Component {
 
         <div className="content__box animate-bottom">
           <div className="box__title">
-            <h3>experience</h3>
+            <h3>Опыт работы</h3>
           </div>
           <div className="box__details box__details-about">
             <div className="tag">
-              <span className="tag__hash"># November 2019 - Present:</span>
+              <span className="tag__hash"># Ноябрь 2019 - По настоящее время:</span>
               <span className="tag__title">
-                TSD BYR PEX <br />
-                Moscow
-                <br /> Leading engineer of the production and technical
-                departament
+                ТСД БИР ПЕКС <br />
+                Москва
+                <br /> Ведущий инженер производственно-технического отдела
                 <br />
-                Work with the customer. Development of technical documentation.
-                Coordination of company service departments.
+                Работа с заказчиком. Разработка технической документации.
+                Координация работы отделов компании.
               </span>
             </div>
             <div className="tag">
               <span className="tag__hash">
-                # September 2018 - October 2019:
+                # Сентябрь 2018 - Октябрь 2019:
               </span>
               <span className="tag__title">
-                TSD BYR PEX <br />
-                Moscow
+                ТСД БИР ПЕКС <br />
+                Москва
                 <br />
-                Production and Technical Department Engineer
+                Инженер производственно-технического отдела
                 <br />
-                Development of technical documentation. Work with the customer
-                and technical supervision.
-              </span>
-            </div>
-            <div className="tag">
-              <span className="tag__hash"># June 2012 - September 2018:</span>
-              <span className="tag__title">
-                TSD BYR PEX <br />
-                Penza
-                <br />
-                Representative
-                <br />
-                Represent the interests of the company, the conclusion of
-                contracts, the preparation of commercial proposals.
+                Разработка технической документации. Работа с заказчиком
+                и техническим надзором.
               </span>
             </div>
             <div className="tag">
-              <span className="tag__hash"># January 2010 - June 2012:</span>
+              <span className="tag__hash"># Июнь 2012 - Сентябрь 2018:</span>
               <span className="tag__title">
-                BYR PEKS company <br />
-                Penza
+                ТСД БИР ПЕКС <br />
+                Пенза
                 <br />
-                Work producer
+                Представитель
                 <br />
-                Work with several objects.
+                Представление интересов компании, заключение
+                контрактов, подготовка коммерческих предложений.
               </span>
             </div>
             <div className="tag">
-              <span className="tag__hash"># July 2008 - December 2009:</span>
+              <span className="tag__hash"># Январь 2010 - Июнь 2012:</span>
               <span className="tag__title">
-                BYR PEKS Stroy <br />
-                Penza
+                Компания БИР ПЕКС <br />
+                Пенза
                 <br />
-                Master
+                Производитель работ
                 <br />
-                Reading documentation, quality control, compiling applications,
-                working with people.
+               Работа с несколькими объектами одновременно.
+              </span>
+            </div>
+            <div className="tag">
+              <span className="tag__hash"># Июль 2008 - Декабрь 2009:</span>
+              <span className="tag__title">
+                БИР ПЕКС Строй <br />
+                Пенза
+                <br />
+                Мастер
+                <br />             
+                Чтение документации, контроль качества, составление приложений,
+                работа с людьми.
               </span>
             </div>
           </div>
@@ -189,13 +187,13 @@ class AboutPage extends Component {
 
         <div className="content__box animate-bottom">
           <div className="box__title">
-            <h3>Education</h3>
+            <h3>Образование</h3>
           </div>
           <div className="box__details box__details-about">
             <div className="tag">
               <span className="tag__hash"># 2019-2020:</span>
               <span className="tag__title">
-                IT full-time courses EASYUM <br />
+                IT курсы EASYUM <br />
                 Frontend react, javascript developer
                 <br />
               </span>
@@ -203,7 +201,7 @@ class AboutPage extends Component {
             <div className="tag">
               <span className="tag__hash"># 2019:</span>
               <span className="tag__title">
-                IT full-time courses EASYUM <br />
+                IT курсы EASYUM <br />
                 Backend java developer
                 <br />
               </span>
@@ -211,9 +209,9 @@ class AboutPage extends Component {
             <div className="tag">
               <span className="tag__hash"># 2007:</span>
               <span className="tag__title">
-                Penza State University of Architecture and Construction, Penza
+                Пензенский Государственный Университет Архитектуры и Строительства, Пенза
                 <br />
-                Heat and Gas Supply and Ventilation Engineer
+                ТеплоГазоСнабжение и Вентиляция
                 <br />
               </span>
             </div>

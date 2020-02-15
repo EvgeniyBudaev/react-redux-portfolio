@@ -23,28 +23,28 @@ class Sidebar extends Component {
           className="link1 hover-target"
           onClick={this.props.onClickLinkFromSidebar}
         >
-          Home
+          Главная
         </Link>
         <Link
           to={ROUTES.WORKS}
           className="link2 hover-target"
           onClick={this.props.onClickLinkFromSidebar}
         >
-          Works
+          Портфолио
         </Link>
         <Link
           to={ROUTES.ABOUT}
           className="link4 hover-target"
           onClick={this.props.onClickLinkFromSidebar}
         >
-          About
+          Обо мне
         </Link>
         <Link
           to={ROUTES.CONTACTS}
           className="link5 hover-target"
           onClick={this.props.onClickLinkFromSidebar}
         >
-          Contacts
+          Контакты
         </Link>
 
         <div className="sidebar-cover">
@@ -55,7 +55,7 @@ class Sidebar extends Component {
           <div className="sidebar-cover__image-6"></div>
         </div>
 
-        <div className="sidebar-back__title">Menu</div>
+        <div className="sidebar-back__title">Меню</div>
       </div>
     );
   }
