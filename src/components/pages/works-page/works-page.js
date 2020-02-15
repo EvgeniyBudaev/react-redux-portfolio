@@ -27,7 +27,7 @@ class WorksPage extends Component {
         return (this.state.visibility !== 'all') ? (card.category === this.state.visibility ) : true;       
       })
       .map( ( card ) => {
-        return (<Card images={card.images} category={card.category} id={card.id} />);
+        return (<Card images={card.images} category={card.category} id={card.id} key={card.id} />);
       });
   };
   

@@ -1,7 +1,9 @@
-const sidebarOpen = () => {
-  return {
+const sidebarOpen =  {
     type: "SIDEBAR_OPEN"
-  };
 };
 
-export { sidebarOpen };
+const sidebarClose = {
+  type: "SIDEBAR_CLOSE"
+};
+
+export { sidebarOpen, sidebarClose };

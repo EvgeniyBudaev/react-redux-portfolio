@@ -3,16 +3,18 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-
   switch (action.type) {
-    case 'SIDEBAR_OPEN':
+    case "SIDEBAR_OPEN":
       return {
-        onSidebar: true
+        onSidebar: !state.onSidebar
+      };
+    case "SIDEBAR_CLOSE":
+      return {
+        onSidebar: false
       };
     default:
       return state;
   }
-
 };
 
 export default reducer;

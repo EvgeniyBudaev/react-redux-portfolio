@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import './image-gallery.css';
 
 import javasriptCertificate from '../images/javascript.png';
+import reactReduxCertificate from '../images/react-redux-udemy.jpg'
 import javaCertificate from '../images/java.png';
 import javaOtusCertificate from '../images/javaOtus.jpeg';
 
 // import {CSSTransitionGroup} from 'react-transition-group';
 const ImageURL = [
   javasriptCertificate,
+  reactReduxCertificate,
   javaCertificate,
   javaOtusCertificate,
 ]
@@ -29,7 +31,7 @@ class ImageGallery extends Component {
         //this.myImage = React.createRef();
     }
     slideTransition = (slider) => {
-        if (this.state.currentIndex == 2) {
+        if (this.state.currentIndex === 3) {
             this.left = 0;
             slider.style.left = this.left + 'px';
         } else {
@@ -46,11 +48,11 @@ class ImageGallery extends Component {
             if (this.state.slideshow === true) {
 
                 var slider = document.getElementById("slider-img-container");
-                var index = (this.state.currentIndex === 2) ? 0 : this.state.currentIndex + 1;
+                // var index = (this.state.currentIndex === 2) ? 0 : this.state.currentIndex + 1;
 
                 this.slideTransition(slider);
 
-                this.setState((prevState) => ({ currentIndex: prevState.currentIndex === 2 ? 0 : prevState.currentIndex + 1 }))
+                this.setState((prevState) => ({ currentIndex: prevState.currentIndex === 3 ? 0 : prevState.currentIndex + 1 }))
 
             }
 
@@ -122,20 +124,20 @@ class ImageGallery extends Component {
 
     prevHandler = (event) => {
         var slider = document.getElementById("slider-img-container");
-        var index = (this.state.currentIndex === 0) ? 2 : this.state.currentIndex - 1;
+        // var index = (this.state.currentIndex === 0) ? 2 : this.state.currentIndex - 1;
 
         this.slideTransition(slider);
 
-        this.setState((prevState) => ({ currentIndex: prevState.currentIndex === 0 ? 2 : prevState.currentIndex - 1 }))
+        this.setState((prevState) => ({ currentIndex: prevState.currentIndex === 0 ? 3 : prevState.currentIndex - 1 }))
     }
 
     nextHandler = (event) => {
         var slider = document.getElementById("slider-img-container");
-        var index = (this.state.currentIndex === 2) ? 0 : this.state.currentIndex + 1;
+        // var index = (this.state.currentIndex === 2) ? 0 : this.state.currentIndex + 1;
 
         this.slideTransition(slider);
 
-        this.setState((prevState) => ({ currentIndex: prevState.currentIndex === 2 ? 0 : prevState.currentIndex + 1 }))
+        this.setState((prevState) => ({ currentIndex: prevState.currentIndex === 3 ? 0 : prevState.currentIndex + 1 }))
     }
 
     render() {
@@ -146,7 +148,7 @@ class ImageGallery extends Component {
         const carouselDots = dotNumbers.map((n,index)=><div className={['carousel-dot', index === this.state.currentIndex ? 'active' : ''].join(' ')} key={n} id={n} onClick={this.dotHandler} >&#9679;</div>)
                                             const ImgItem =
                                             <div className="gallery-img-container">
-                                              <img className="gallery-img" src={ImageURL[i]} />
+                                              <img className="gallery-img" src={ImageURL[i]} alt="images" />
                                               <button className= "prev-carousel-button" onClick={this.prevHandler}>&#9664;</button>
                                               <div id="carousel-dot-container">{carouselDots}</div>
                                               <div className= "next-carousel-button" onClick={this.nextHandler}>&#9654;</div>
@@ -157,7 +159,7 @@ class ImageGallery extends Component {
                                             var imgId=0;
 
 
-                                            const sliderImages = ImageURL.slice(0,3).map ((n,index)=><img className={['slider-img', index === this.state.currentIndex ? 'active' : ''].join(' ')} src={n} key={n} id={imgId++} onClick={this.updateImage}/>)
+                                            const sliderImages = ImageURL.slice(0,3).map ((n,index)=><img alt="images" className={['slider-img', index === this.state.currentIndex ? 'active' : ''].join(' ')} src={n} key={n} id={imgId++} onClick={this.updateImage}/>)
 
 
                                                                                            return (

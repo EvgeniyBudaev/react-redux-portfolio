@@ -1,16 +1,17 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 import "./navbar.css";
-import * as classes from './navbar.module.scss';
+import * as classes from "./navbar.module.scss";
 
-import { ROUTES } from '../../../../util/routes';
+import { ROUTES } from "../../../../util/routes";
 
 const Navbar = ({ onSidebar }) => {
-  let classNamesNavbar = 'nav-menu show';
+  let classNamesNavbar = "nav-menu show";
 
-  if(onSidebar) {
-    classNamesNavbar += ' off';
+  if (onSidebar) {
+    classNamesNavbar += " off";
   }
 
   return (
@@ -40,4 +41,10 @@ const Navbar = ({ onSidebar }) => {
   );
 };
 
-export default Navbar;
+const mapStateToProps = ({ onSidebar }) => {
+  return {
+    onSidebar
+  };
+};
+
+export default connect(mapStateToProps)(Navbar);

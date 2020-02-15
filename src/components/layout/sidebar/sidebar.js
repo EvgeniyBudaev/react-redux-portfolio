@@ -1,32 +1,49 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 import "./sidebar.css";
 
 import { ROUTES } from "../../../util/routes";
+import { sidebarClose } from "../../../actions";
 
 class Sidebar extends Component {
-
   render() {
     const { onSidebar } = this.props;
-    let classNamesSidebar = 'sidebar';
+    let classNamesSidebar = "sidebar";
 
-    if(onSidebar) {
-      classNamesSidebar += ' active';
-    } 
+    if (onSidebar) {
+      classNamesSidebar += " active";
+    }
 
     return (
       <div className={classNamesSidebar}>
-        <Link to={ROUTES.HOME} className="link1 hover-target" onClick={this.props.onClickLinkFromSidebar}>
+        <Link
+          to={ROUTES.HOME}
+          className="link1 hover-target"
+          onClick={this.props.onClickLinkFromSidebar}
+        >
           Home
         </Link>
-        <Link to={ROUTES.WORKS} className="link2 hover-target" onClick={this.props.onClickLinkFromSidebar}>
+        <Link
+          to={ROUTES.WORKS}
+          className="link2 hover-target"
+          onClick={this.props.onClickLinkFromSidebar}
+        >
           Works
         </Link>
-        <Link to={ROUTES.ABOUT} className="link4 hover-target" onClick={this.props.onClickLinkFromSidebar}>
+        <Link
+          to={ROUTES.ABOUT}
+          className="link4 hover-target"
+          onClick={this.props.onClickLinkFromSidebar}
+        >
           About
         </Link>
-        <Link to={ROUTES.CONTACTS} className="link5 hover-target" onClick={this.props.onClickLinkFromSidebar}>
+        <Link
+          to={ROUTES.CONTACTS}
+          className="link5 hover-target"
+          onClick={this.props.onClickLinkFromSidebar}
+        >
           Contacts
         </Link>
 
@@ -44,4 +61,16 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+const mapStateToProps = ({ onSidebar }) => {
+  return {
+    onSidebar
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onClickLinkFromSidebar: () => dispatch(sidebarClose)
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Sidebar);

@@ -19,17 +19,17 @@ const ContactsPage = () => {
           <div className="box__title"></div>
           <div className="box__details box__details-contact">
             <ul>
-            <div className="content__title animated zoomIn slow">
-              <h1 className="content__title-lead">Contact us</h1>
-            </div>
-            <div className="content__title-info">
-              <div className="content__title-sublead content__title-email animated zoomIn slow">
-                budaev.e@gmail.com
+              <div className="content__title animated zoomIn slow">
+                <h1 className="content__title-lead">Contact us</h1>
               </div>
-              <div className="content__title-sublead content__title-phone animated zoomIn slow">
-                +7 (925) 068-30-60
+              <div className="content__title-info">
+                <div className="content__title-sublead content__title-email animated zoomIn slow">
+                  budaev.e@gmail.com
+                </div>
+                <div className="content__title-sublead content__title-phone animated zoomIn slow">
+                  +7 (925) 068-30-60
+                </div>
               </div>
-            </div>
             </ul>
           </div>
         </div>
