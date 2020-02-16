@@ -26,12 +26,14 @@ In the project directory, you can run:
 
 options:
 
- <!-- ### `npm install --save react-id-swiper@latest swiper@latest` -->
- <!-- npm install firebase-tools -g -->
- <!-- firebase login -->
- <!-- firebase init -->
- <!-- firebase use -->
- <!-- firebase deploy -->
+### `npm install --save react-id-swiper@latest swiper@latest`
+
+firebase commands:
+npm install firebase-tools -g
+firebase login
+firebase init
+firebase use
+firebase deploy
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
