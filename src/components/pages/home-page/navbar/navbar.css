@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Butler;
+  src: url(../.././../../assets/fonts/Butler-Font/Butler_Regular.otf);
+}
+
 .nav-menu {
   position: fixed;
   width: 100%;
@@ -48,7 +53,7 @@
 
 @media (max-width: 1160px) {
   .nav-menu__items {
-   justify-content: center;
+    justify-content: center;
   }
   .nav-menu__item {
     margin-right: 200px;
@@ -60,10 +65,10 @@
     left: 40%;
   }
   .home-page__title {
-    font-size: 8vw;;
+    font-size: 8vw;
   }
   .home-page__subtitle {
-    font-size: 2vw;;
+    font-size: 2vw;
   }
   .nav-menu__item {
     margin-right: 150px;
@@ -96,4 +101,3 @@
     font-size: 15px;
   }
 }
-

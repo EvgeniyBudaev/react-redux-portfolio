@@ -9,6 +9,7 @@ import { sidebarClose } from "../../../actions";
 
 class Sidebar extends Component {
   render() {
+        console.log(this.props);
     const { onSidebar } = this.props;
     let classNamesSidebar = "sidebar";
 

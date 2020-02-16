@@ -9,12 +9,13 @@ import AsidePanelControls from './aside-panel-controls';
 class AsidePanel extends Component {
 
   render() {
+   
     return (
       <div className={classes.asidePanel}>
         <div className={classes.asidePanel__panel}>
-          <Hamburger onHandleClickHamburger={this.props.onHandleClickHamburger} onSidebar={this.props.onSidebar}/>
+          <Hamburger />
           <AsidePanelText />
-          <AsidePanelControls onSidebar={this.props.onSidebar} />
+          <AsidePanelControls />
         </div>
       </div>
     );

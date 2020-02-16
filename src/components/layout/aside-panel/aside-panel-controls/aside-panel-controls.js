@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import './aside-panel-controls.css';
 
@@ -28,4 +29,10 @@ const AsidePanelControls = ({ onSidebar }) => {
   );
 };
 
-export default AsidePanelControls;
+const mapStateToProps = ({ onSidebar }) => {
+  return {
+    onSidebar
+  };
+};
+
+export default connect(mapStateToProps)(AsidePanelControls);

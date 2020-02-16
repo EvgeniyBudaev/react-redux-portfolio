@@ -2,7 +2,7 @@
 .about-details {
   min-width: 100%;
   min-height: 100%;
-  background: #fff;
+  background: #0a0a0a;
   display: flex;
   line-height: 1.15;
   font-family: Candara, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
@@ -62,6 +62,7 @@
   flex-basis: 165px;
   flex-grow: 0;
   flex-shrink: 0;
+  color: #fff;
 }
 
 .content__box {
@@ -84,7 +85,7 @@
   align-items: center;
 }
 
-.content__title-lead {
+.content__title .content__title-lead {
   margin: 0;
   padding: 0;
   font-size: 110px;
@@ -92,11 +93,11 @@
   font-family: Playfair Display, serif;
   font-weight: 400;
   line-height: 100px;
-  color: #000;
+  color: #fff;
 }
 
 .content__box .box__title {
-  border-top: 1px dotted #b4b4b4;
+  border-top: 1px dotted #fff;
   width: 165px;
   margin-right: 130px;
   flex-basis: 165px;
@@ -114,7 +115,7 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 600;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -124,7 +125,7 @@
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #000;
+  color: #fff;
   line-height: 28px;
 }
 
@@ -132,7 +133,7 @@
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #000;
+  color: #fff;
   margin-bottom: 25px;
 }
 

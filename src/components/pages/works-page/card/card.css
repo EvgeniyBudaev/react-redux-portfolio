@@ -12,3 +12,40 @@
 .item {
   color: white;
 }
+
+/* button section #2 */
+.section__btn-container {
+  border: none;
+  font-family: 'Halvetica', sans-serif;
+  max-width: 610px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.section__btn-container .btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: rgba(233,190,106,0.7);
+  background-color: #231f20;
+  border-radius: 0;
+  padding: 20px 80px;
+  background: linear-gradient(270deg, rgba(233,190,106,1), rgba(146,111,52,1), rgba(34,34,34,1), rgba(34,34,34,1));
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+  margin: 10px;
+  border: none;
+  border: 1px solid rgba(223,190,106,0.3);
+  transition: all 0.7s ease-in-out;
+}
+
+.section__btn-container .btn:hover {
+  color: #fff;
+  border: 1px solid rgba(223,190,106,0);
+  background-position: 99% 50%;
+}
+/* end button section #2 */

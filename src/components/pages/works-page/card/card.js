@@ -1,18 +1,23 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component, Fragment } from "react";
+
 import "./card.css";
-import { ROUTES } from "../../../../util/routes";
 
 class Card extends Component {
-
   render() {
-    const { images} = this.props;
+    const { images, urlSite, urlGithub } = this.props;
     return (
-      <div key={this.props.category} className="content pageProofs item">
-        <Link to={ROUTES.ROSA} target="_blank">
-          <img src={images} alt="images"></img>
-        </Link>
-      </div>
+      <Fragment>
+        <div key={this.props.category} className="content item">
+          <a href={urlSite} target="blank">
+            <img src={images} alt="images"></img>
+          </a>
+          <div className="section__btn-container">
+            <a href={urlGithub} className="btn" target="blank">
+               GitHub
+            </a>
+          </div>
+        </div>
+      </Fragment>
     );
   }
 }

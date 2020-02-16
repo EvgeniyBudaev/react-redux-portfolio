@@ -31,14 +31,14 @@ class AboutPage extends Component {
 
         <div className="content__box animated zoomIn slow">
           <div className="box__title">
-            <h3>Обо мне</h3>
+            <h3 className="h3">Обо мне</h3>
           </div>
           <div className="box__details box__details-about">
-            <p>          
-              Меня зовут Евгений. Проживаю в Москве. Я специализируюсь в основном на
-              фронт-энд разработке. Я считаю идеальной работой, где я буду
-              полезен при разработке Вашего проекта, как разработчик, где я
-              буду чувствовать себя частью команды.
+            <p>
+              Меня зовут Евгений. Проживаю в Москве. Я специализируюсь в
+              основном на фронт-энд разработке. Я считаю идеальной работой, где
+              я буду полезен при разработке Вашего проекта, как разработчик, где
+              я буду чувствовать себя частью команды.
             </p>
           </div>
         </div>
@@ -123,7 +123,9 @@ class AboutPage extends Component {
           </div>
           <div className="box__details box__details-about">
             <div className="tag">
-              <span className="tag__hash"># Ноябрь 2019 - По настоящее время:</span>
+              <span className="tag__hash">
+                # Ноябрь 2019 - По настоящее время:
+              </span>
               <span className="tag__title">
                 ТСД БИР ПЕКС <br />
                 Москва
@@ -134,17 +136,15 @@ class AboutPage extends Component {
               </span>
             </div>
             <div className="tag">
-              <span className="tag__hash">
-                # Сентябрь 2018 - Октябрь 2019:
-              </span>
+              <span className="tag__hash"># Сентябрь 2018 - Октябрь 2019:</span>
               <span className="tag__title">
                 ТСД БИР ПЕКС <br />
                 Москва
                 <br />
                 Инженер производственно-технического отдела
                 <br />
-                Разработка технической документации. Работа с заказчиком
-                и техническим надзором.
+                Разработка технической документации. Работа с заказчиком и
+                техническим надзором.
               </span>
             </div>
             <div className="tag">
@@ -155,8 +155,8 @@ class AboutPage extends Component {
                 <br />
                 Представитель
                 <br />
-                Представление интересов компании, заключение
-                контрактов, подготовка коммерческих предложений.
+                Представление интересов компании, заключение контрактов,
+                подготовка коммерческих предложений.
               </span>
             </div>
             <div className="tag">
@@ -167,7 +167,7 @@ class AboutPage extends Component {
                 <br />
                 Производитель работ
                 <br />
-               Работа с несколькими объектами одновременно.
+                Работа с несколькими объектами одновременно.
               </span>
             </div>
             <div className="tag">
@@ -177,7 +177,7 @@ class AboutPage extends Component {
                 Пенза
                 <br />
                 Мастер
-                <br />             
+                <br />
                 Чтение документации, контроль качества, составление приложений,
                 работа с людьми.
               </span>
@@ -209,7 +209,8 @@ class AboutPage extends Component {
             <div className="tag">
               <span className="tag__hash"># 2007:</span>
               <span className="tag__title">
-                Пензенский Государственный Университет Архитектуры и Строительства, Пенза
+                Пензенский Государственный Университет Архитектуры и
+                Строительства, Пенза
                 <br />
                 ТеплоГазоСнабжение и Вентиляция
                 <br />
@@ -220,10 +221,9 @@ class AboutPage extends Component {
 
         {/* slider  */}
         <div className="about__slider-wrapper animate-bottom">
-        <ImageGallery />
+          <ImageGallery />
         </div>
         {/* end slider */}
-
       </div>
     </div>
   );

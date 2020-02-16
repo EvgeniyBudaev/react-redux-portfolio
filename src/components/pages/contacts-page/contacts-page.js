@@ -15,15 +15,15 @@ const ContactsPage = () => {
         </div>
       </div>
       <div className="contacts-details__content">
-        <div className="content__box content__box-title">
+        <div className="contacts-content__box contacts-content__box-title">
           <div className="box__title"></div>
           <div className="box__details box__details-contact">
             <ul>
-              <div className="content__title animated zoomIn slow">
-                <h1 className="content__title-lead">Contact us</h1>
+              <div className="contacts-content__title animated zoomIn slow">
+                <h1 className="contacts-content__title-lead">Contact</h1>
               </div>
-              <div className="content__title-info">
-                <div className="content__title-sublead content__title-email animated zoomIn slow">
+              <div className="contacts-content__title-info">
+                <div className="content__title-sublead contacts-content__title-email animated zoomIn slow">
                   budaev.e@gmail.com
                 </div>
                 <div className="content__title-sublead content__title-phone animated zoomIn slow">
@@ -42,7 +42,8 @@ const ContactsPage = () => {
           <div className="box__details box__details-contact">
             <ul>
               <li>
-                Спасибо Вам за просморт моего резюме! Жду Ваших предложений по работе ;)
+                Спасибо Вам за просмотр моего резюме! Жду Ваших предложений по
+                работе ;)
               </li>
             </ul>
           </div>

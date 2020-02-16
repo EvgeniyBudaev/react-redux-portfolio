@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Butler;
+  src: url(../.././../../assets/fonts/Butler-Font/Butler_Regular.otf);
+}
 .home-page__titles {
   top: 51%;
   left: 30%;
