@@ -5,6 +5,7 @@ import MainLayout from "../layout/main-layout";
 import Logo from "../layout/logo";
 import IconGitHub from "../layout/iconGitHub";
 import HomePage from "../pages/home-page";
+import SectionPage from '../pages/home-page/section-page';
 import WorksPage from "../pages/works-page";
 import AboutPage from "../pages/about-page";
 import ContactsPage from "../pages/contacts-page";
@@ -18,18 +19,18 @@ class App extends Component {
           <Switch>
             <Route exact path={ROUTES.HOME}>
               <HomePage></HomePage>
-              <ContactsPage></ContactsPage>
+              <SectionPage />
               <Logo />
               <IconGitHub />
             </Route>
             <Route exact path={ROUTES.WORKS}>
-              <WorksPage></WorksPage>
+              <WorksPage />
             </Route>
             <Route exact path={ROUTES.ABOUT}>
-              <AboutPage></AboutPage>
+              <AboutPage />
             </Route>
             <Route exact path={ROUTES.CONTACTS}>
-              <ContactsPage></ContactsPage>
+              <ContactsPage />
             </Route>
           </Switch>
         </MainLayout>
