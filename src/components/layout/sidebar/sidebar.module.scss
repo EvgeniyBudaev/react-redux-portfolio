@@ -1,0 +1,24 @@
+
+.sidebar_enter {
+  opacity: 5;
+  z-index: 1000;
+  visibility: visible;
+}
+
+.sidebar_enter_active {
+  visibility: visible;
+  opacity: 5;
+  transition: opacity 1000ms;
+  z-index: 1000;
+}
+
+.sidebar_exit {
+  visibility: visible;
+  opacity: 5;
+}
+
+.sidebar_exit_active {
+  opacity: 5;
+  transition: opacity 1000ms;
+  visibility: visible;
+}

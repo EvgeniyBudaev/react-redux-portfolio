@@ -356,8 +356,11 @@
 }
 @media (max-width: 320px) {
   .content__title-sublead.content__title-email {
-    left: -20px;
+    left: -15px;
   }
+  .content__title-sublead {
+    font-size: 19px;
+}
   .content__title-lead,
   .content__title-sublead.content__title-phone {
     left: -17px;

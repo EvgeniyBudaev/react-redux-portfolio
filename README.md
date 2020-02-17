@@ -22,6 +22,8 @@ In the project directory, you can run:
 
 ### `npm install redux react-redux redux-thunk`
 
+### `npm install react-transition-group`
+
 ### `npm start`
 
 options:

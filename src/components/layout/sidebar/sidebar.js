@@ -1,15 +1,24 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { CSSTransition } from 'react-transition-group';
 
 import "./sidebar.css";
+import * as classes from './sidebar.module.scss';
 
 import { ROUTES } from "../../../util/routes";
 import { sidebarClose } from "../../../actions";
 
+const animclasses = {
+  enter: classes['sidebar_enter'],
+  enterActive: classes['sidebar_enter_active'],
+  exit: classes['sidebar_exit'],
+  exitActiv: classes['sidebar_exit_active']
+}
+
 class Sidebar extends Component {
   render() {
-        console.log(this.props);
+
     const { onSidebar } = this.props;
     let classNamesSidebar = "sidebar";
 
@@ -18,6 +27,13 @@ class Sidebar extends Component {
     }
 
     return (
+      <CSSTransition
+       in={classNamesSidebar}
+       timeout={1000}
+       classnames={animclasses}
+       mountOnEnter
+       unmountOnExit>
+      {/* <div className={classes.sidebar}> */}
       <div className={classNamesSidebar}>
         <Link
           to={ROUTES.HOME}
@@ -58,6 +74,7 @@ class Sidebar extends Component {
 
         <div className="sidebar-back__title">Меню</div>
       </div>
+      </CSSTransition>
     );
   }
 }

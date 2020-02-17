@@ -10,8 +10,8 @@ body{
   position : relative;
   text-align : center;
   overflow-x : hidden;
-
 }
+
 .gallery-img-container {
   transition: all .5s linear;
   border : 2px solid #bbb;
@@ -19,7 +19,6 @@ body{
   vertical-align: top;
   position : relative;
   text-align : center;
-
 }
 
 .gallery-img {
@@ -160,9 +159,18 @@ body{
     margin-bottom: 20px;
 }
 }
-@media (max-width: 520px) {
+
+@media (max-width: 580px) {
   #gallery-container {
     width: 120%;
 }
 }
+
+
+@media (max-width: 520px) {
+  #gallery-container {
+    width : 115%;
+}
+}
+
 
