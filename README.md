@@ -22,7 +22,7 @@ In the project directory, you can run:
 
 ### `npm install redux react-redux redux-thunk`
 
-### `npm install react-transition-group`
+### `npm install @types/react-transition-group`
 
 ### `npm start`
 
@@ -36,6 +36,8 @@ firebase login
 firebase init
 firebase use
 firebase deploy
+
+firebase serve
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

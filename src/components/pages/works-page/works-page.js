@@ -7,6 +7,7 @@ import rwws from "./images/react-work-with-server.jpg";
 import trafficLights from "./images/traffic_lights.jpg";
 import java from "./images/java.jpg";
 import swedishBitterness from "./images/swedish-bitterness.jpg";
+import surf from './images/surf.jpg';
 import Card from "./card";
 
 class WorksPage extends Component {
@@ -49,6 +50,13 @@ class WorksPage extends Component {
         urlSite: "https://swedish-bitterness.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Swedish_Bitterness",
         id: 5
+      },
+      {
+        images: surf,
+        category: "pageProofs",
+        urlSite: "https://westshore-8448b.firebaseapp.com/",
+        urlGithub: "https://github.com/EvgeniyBudaev/Surf",
+        id: 6
       }
     ]
   };
