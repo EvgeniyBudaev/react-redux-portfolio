@@ -26,7 +26,7 @@ input[type="checkbox"]:checked ~ section {
 }
 
 .works-title {
-  color: #fff;
+  color: rgba(233, 190, 106, 0.7);
   text-align: center;
   text-transform: uppercase;
 }
@@ -46,13 +46,6 @@ input[type="checkbox"]:checked ~ section {
   grid-gap: 2vw;
   justify-content: center;
   align-items: center;
-}
-
-.content img {
-  max-width: 300px;
-  width: 100%;
-  height: 200px;
-  margin: 10px;
 }
 
 .content a:hover {
@@ -83,13 +76,13 @@ input[type="checkbox"]:checked ~ section {
 
 .filter-button-group__item:hover {
   color: #000;
-  background: #fff;
+  background: rgba(233, 190, 106, 0.7);
   transition: all 1s ease;
 }
 
 .filter-button-group__item.active {
   color: #000;
-  background: #fff;
+  background: rgba(233, 190, 106, 0.7);
 }
 
 .lightboxOverlay {
@@ -109,16 +102,17 @@ input[type="checkbox"]:checked ~ section {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   transition: all 1s ease;
+  font-family: Butler;
 }
 
 .button.active {
   color: #000;
-  background-color: #fff;
+  background-color: rgba(233, 190, 106, 0.7);
 }
 
 .button:hover {
   color: #000;
-  background-color: #fff;
+  background-color: rgba(233, 190, 106, 0.7);
   transition: all 1s ease;
 }
 

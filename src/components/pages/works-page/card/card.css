@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Butler;
+  src: url(../../../../assets/fonts/Butler-Font/Butler_Regular.otf);
+}
+
+.content.item {
+  align-self: center;
+  justify-self: center;
+}
+
 .content img {
   max-width: 300px;
   width: 100%;
@@ -16,7 +26,7 @@
 /* button section #2 */
 .section__btn-container {
   border: none;
-  font-family: 'Halvetica', sans-serif;
+  font-family: Butler;
   max-width: 610px;
   width: 100%;
   align-items: center;

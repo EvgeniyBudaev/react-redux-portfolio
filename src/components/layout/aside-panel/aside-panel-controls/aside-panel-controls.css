@@ -102,9 +102,9 @@
 /* end aside-panel__controls */
 
 /* MEDIA */
-
-@media (max-width: 450px) {
-  .aside-panel__controls {
-    margin-bottom: 30px;
+@media (max-width: 375px) {
+  .round-button {
+    width: 25px;
   }
 }
+
