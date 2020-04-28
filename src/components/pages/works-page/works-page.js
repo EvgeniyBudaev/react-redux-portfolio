@@ -9,6 +9,7 @@ import java from "./images/java.jpg";
 import swedishBitterness from "./images/swedish-bitterness.jpg";
 import surf from './images/surf.jpg';
 import minimo from './images/minimo.jpg';
+import moderno from './images/moderno.jpg';
 import Card from "./card";
 
 class WorksPage extends Component {
@@ -66,6 +67,13 @@ class WorksPage extends Component {
         urlGithub: "https://github.com/EvgeniyBudaev/Minimo",
         id: 7
       },
+      {
+        images: moderno,
+        category: "pageProofs",
+        urlSite: "https://github.com/EvgeniyBudaev/moderno",
+        urlGithub: "https://github.com/EvgeniyBudaev/moderno",
+        id: 8
+      }
     ]
   };
 
@@ -101,26 +109,26 @@ class WorksPage extends Component {
   };
 
   buttons = [
-    {value: 'all', label: 'Все'},
-    {value: 'react', label: 'React'},
-    {value: 'javascript', label: 'JavaScript'},
-    {value: 'java', label: 'Java'},
-    {value: 'pageProofs', label: 'Вёрстка'}
+    { value: 'all', label: 'Все' },
+    { value: 'react', label: 'React' },
+    { value: 'javascript', label: 'JavaScript' },
+    { value: 'java', label: 'Java' },
+    { value: 'pageProofs', label: 'Вёрстка' }
   ]
 
   render() {
     const { visibility } = this.state;
 
-    const buttons = this.buttons.map(({value, label}) => {
-    const isActiveButton = visibility === value;
-    const clazz = isActiveButton ? 'button active' : 'button';
+    const buttons = this.buttons.map(({ value, label }) => {
+      const isActiveButton = visibility === value;
+      const clazz = isActiveButton ? 'button active' : 'button';
       return (
         <li className="filter-button-group__item hover-target" key={value}>
-         <button
-          value={value}
-          onClick={ this.cardFilterAction }
-          className={clazz}
-         >
+          <button
+            value={value}
+            onClick={this.cardFilterAction}
+            className={clazz}
+          >
             {label}
           </button>
         </li>
@@ -136,7 +144,7 @@ class WorksPage extends Component {
             <div className="filters filter-button-group">
               <ul className="filter-button-group__items">
                 <h4>
-                {buttons}
+                  {buttons}
                 </h4>
               </ul>
             </div>

@@ -35,13 +35,13 @@ class AboutPage extends Component {
           </div>
           <div className="box__details box__details-about">
             <p>
-              Меня зовут Евгений. Проживаю в Москве. Я специализируюсь в
-              основном на фронт-энд разработке. Я считаю идеальной работой, где
-              я буду полезен при разработке Вашего проекта, как разработчик, где
-              я буду чувствовать себя частью команды.
+              Меня зовут Евгений. Проживаю в Москве. Я специализируюсь на фронт-энд разработке.
+              Идеальной работой считаю, где я буду полезен в развитии Вашего проекта, как разработчик,
+              где я буду чувствовать себя частью команды.
             </p>
           </div>
         </div>
+
 
         <div className="content__box animated zoomIn slow">
           <div className="box__title">
@@ -51,10 +51,6 @@ class AboutPage extends Component {
             <div className="tag">
               <span className="tag__hash">#</span>
               <span className="tag__title">React + Redux</span>
-            </div>
-            <div className="tag">
-              <span className="tag__hash">#</span>
-              <span className="tag__title">VueJs</span>
             </div>
             <div className="tag">
               <span className="tag__hash">#</span>
@@ -70,49 +66,27 @@ class AboutPage extends Component {
             </div>
             <div className="tag">
               <span className="tag__hash">#</span>
-              <span className="tag__title">GULP, Adobe Photoshop, Figma</span>
+              <span className="tag__title">GULP, Webpack</span>
+            </div>
+            <div className="tag">
+              <span className="tag__hash">#</span>
+              <span className="tag__title">Adobe Photoshop, Figma</span>
             </div>
             <div className="tag">
               <span className="tag__hash">#</span>
               <span className="tag__title">
-                GIT, Bootstrap 4, Flex, Cross-browser layout, Adaptability
+                GIT, Bootstrap 4, Flex
               </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="content__box animate-bottom">
-          <div className="box__title">
-            <h3>Навыки / BackEnd</h3>
-          </div>
-          <div className="box__details box__details-about">
-            <div className="tag">
-              <span className="tag__hash">#</span>
-              <span className="tag__title">Java SE, EE</span>
-            </div>
-            <div className="tag">
-              <span className="tag__hash">#</span>
-              <span className="tag__title">Java Servlets</span>
-            </div>
-            <div className="tag">
-              <span className="tag__hash">#</span>
-              <span className="tag__title">JSP</span>
-            </div>
-            <div className="tag">
-              <span className="tag__hash">#</span>
-              <span className="tag__title">JDBC</span>
-            </div>
-            <div className="tag">
-              <span className="tag__hash">#</span>
-              <span className="tag__title">Apache Maven</span>
-            </div>
-            <div className="tag">
-              <span className="tag__hash">#</span>
-              <span className="tag__title">Apache Tomcat</span>
             </div>
             <div className="tag">
               <span className="tag__hash">#</span>
               <span className="tag__title">My SQL</span>
+            </div>
+            <div className="tag">
+              <span className="tag__hash">#</span>
+              <span className="tag__title">
+                Адаптив, кроссбраузерность
+              </span>
             </div>
           </div>
         </div>
@@ -122,9 +96,23 @@ class AboutPage extends Component {
             <h3>Опыт работы</h3>
           </div>
           <div className="box__details box__details-about">
+
             <div className="tag">
               <span className="tag__hash">
-                # Ноябрь 2019 - По настоящее время:
+                # Сентябрь 2019 - Декабрь 2019:
+              </span>
+              <span className="tag__title">
+                IT Easy Um <br />
+                Москва
+                <br /> Junior Frontend разработчик
+                <br />
+                IT курсы в EasyUm на позицию Frontend-разработчика на React. Лучше всех справился с поставленными задачами и единственный кто разработал свое интерактивное резюме.
+              </span>
+            </div>
+
+            <div className="tag">
+              <span className="tag__hash">
+                # Январь 2019 - Сентябрь 2019:
               </span>
               <span className="tag__title">
                 ТСД БИР ПЕКС <br />
@@ -135,8 +123,9 @@ class AboutPage extends Component {
                 Координация работы отделов компании.
               </span>
             </div>
+
             <div className="tag">
-              <span className="tag__hash"># Сентябрь 2018 - Октябрь 2019:</span>
+              <span className="tag__hash"># Сентябрь 2018 - Сентябрь 2019:</span>
               <span className="tag__title">
                 ТСД БИР ПЕКС <br />
                 Москва
@@ -147,6 +136,7 @@ class AboutPage extends Component {
                 техническим надзором.
               </span>
             </div>
+
             <div className="tag">
               <span className="tag__hash"># Июнь 2012 - Сентябрь 2018:</span>
               <span className="tag__title">
