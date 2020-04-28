@@ -18,10 +18,10 @@ class WorksPage extends Component {
     activeClass: ' active',
     cards: [
       {
-        images: rosa,
+        images: moderno,
         category: "pageProofs",
-        urlSite: "https://budaev-rosa-cd52e.firebaseapp.com",
-        urlGithub: "https://github.com/EvgeniyBudaev/Rosa",
+        urlSite: "https://github.com/EvgeniyBudaev/moderno",
+        urlGithub: "https://github.com/EvgeniyBudaev/moderno",
         id: 1
       },
       {
@@ -32,11 +32,39 @@ class WorksPage extends Component {
         id: 2
       },
       {
+        images: surf,
+        category: "pageProofs",
+        urlSite: "https://westshore-8448b.firebaseapp.com/",
+        urlGithub: "https://github.com/EvgeniyBudaev/Surf",
+        id: 3
+      },
+      {
+        images: swedishBitterness,
+        category: "pageProofs",
+        urlSite: "https://swedish-bitterness.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/Swedish_Bitterness",
+        id: 4
+      },
+      {
+        images: rosa,
+        category: "pageProofs",
+        urlSite: "https://budaev-rosa-cd52e.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/Rosa",
+        id: 5
+      },
+      {
+        images: minimo,
+        category: "pageProofs",
+        urlSite: "https://minimo-da92b.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/Minimo",
+        id: 6
+      },
+      {
         images: trafficLights,
         category: "javascript",
         urlSite: "https://traffic-lights-ff7de.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Traffic_Lights",
-        id: 3
+        id: 7
       },
       {
         images: java,
@@ -44,34 +72,6 @@ class WorksPage extends Component {
         urlSite: "https://github.com/EvgeniyBudaev/studentsControl-localhost-",
         urlGithub:
           "https://github.com/EvgeniyBudaev/studentsControl-localhost-",
-        id: 4
-      },
-      {
-        images: swedishBitterness,
-        category: "pageProofs",
-        urlSite: "https://swedish-bitterness.firebaseapp.com",
-        urlGithub: "https://github.com/EvgeniyBudaev/Swedish_Bitterness",
-        id: 5
-      },
-      {
-        images: surf,
-        category: "pageProofs",
-        urlSite: "https://westshore-8448b.firebaseapp.com/",
-        urlGithub: "https://github.com/EvgeniyBudaev/Surf",
-        id: 6
-      },
-      {
-        images: minimo,
-        category: "pageProofs",
-        urlSite: "https://minimo-da92b.firebaseapp.com",
-        urlGithub: "https://github.com/EvgeniyBudaev/Minimo",
-        id: 7
-      },
-      {
-        images: moderno,
-        category: "pageProofs",
-        urlSite: "https://github.com/EvgeniyBudaev/moderno",
-        urlGithub: "https://github.com/EvgeniyBudaev/moderno",
         id: 8
       }
     ]
