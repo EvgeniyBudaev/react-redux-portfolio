@@ -27,7 +27,7 @@ class WorksPage extends Component {
       {
         images: rwws,
         category: "react",
-        urlSite: "https://react-work-with-server.firebaseapp.com",
+        urlSite: "https://github.com/EvgeniyBudaev/react-work-with-server",
         urlGithub: "https://github.com/EvgeniyBudaev/react-work-with-server",
         id: 2
       },
