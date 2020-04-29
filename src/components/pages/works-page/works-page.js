@@ -20,7 +20,7 @@ class WorksPage extends Component {
       {
         images: moderno,
         category: "pageProofs",
-        urlSite: "https://github.com/EvgeniyBudaev/moderno",
+        urlSite: "https://moderno-c05f7.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/moderno",
         id: 1
       },
