@@ -10,7 +10,15 @@ import swedishBitterness from "./images/swedish-bitterness.jpg";
 import surf from './images/surf.jpg';
 import minimo from './images/minimo.jpg';
 import moderno from './images/moderno.jpg';
+import quiz from "./images/quiz.jpg";
+import reactToDoListApp from './images/reactToDoListApp.jpg';
+import tesla from './images/tesla.jpg';
+import martaUp from './images/martaUp.jpg';
+import bisLite from './images/bisLite.jpg';
+import balloon from './images/balloon.jpg';
+import jetro from './images/jetro.jpg';
 import Card from "./card";
+
 
 class WorksPage extends Component {
   state = {
@@ -18,53 +26,102 @@ class WorksPage extends Component {
     activeClass: ' active',
     cards: [
       {
+        images: quiz,
+        category: "react",
+        urlSite: "https://react-quiz-bb571.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/redux-quiz",
+        id: 1
+      },
+      {
+        images: surf,
+        category: "pageProofs",
+        urlSite: "https://westshore-8448b.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/Surf",
+        id: 2
+      },
+      {
         images: moderno,
         category: "pageProofs",
         urlSite: "https://moderno-c05f7.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/moderno",
-        id: 1
+        id: 3
       },
       {
         images: rwws,
         category: "react",
         urlSite: "https://github.com/EvgeniyBudaev/react-work-with-server",
         urlGithub: "https://github.com/EvgeniyBudaev/react-work-with-server",
-        id: 2
+        id: 4
       },
       {
-        images: surf,
-        category: "pageProofs",
-        urlSite: "https://westshore-8448b.firebaseapp.com/",
-        urlGithub: "https://github.com/EvgeniyBudaev/Surf",
-        id: 3
+        images: reactToDoListApp,
+        category: "react",
+        urlSite: "https://reacttodolistapp-dd1de.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/React_todoListApp",
+        id: 5
       },
       {
         images: swedishBitterness,
         category: "pageProofs",
         urlSite: "https://swedish-bitterness.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Swedish_Bitterness",
-        id: 4
+        id: 6
       },
       {
         images: rosa,
         category: "pageProofs",
         urlSite: "https://budaev-rosa-cd52e.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Rosa",
-        id: 5
+        id: 7
       },
       {
         images: minimo,
         category: "pageProofs",
         urlSite: "https://minimo-da92b.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Minimo",
-        id: 6
+        id: 8
+      },
+      {
+        images: tesla,
+        category: "pageProofs",
+        urlSite: "https://tesla-d22e6.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/Tesla",
+        id: 9
+      },
+      {
+        images: martaUp,
+        category: "pageProofs",
+        urlSite: "https://martaup-fd339.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/MartaUP",
+        id: 10
+      },
+      {
+        images: bisLite,
+        category: "pageProofs",
+        urlSite: "https://bislite-9a1af.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/BisLite",
+        id: 11
+      },
+      {
+        images: balloon,
+        category: "pageProofs",
+        urlSite: "https://balloon-5f062.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/Balloon",
+        id: 12
+      },
+      {
+        images: jetro,
+        category: "pageProofs",
+        urlSite: "https://jetro-62bf2.firebaseapp.com",
+        urlGithub: "https://github.com/EvgeniyBudaev/jetro",
+        id: 13
       },
       {
         images: trafficLights,
         category: "javascript",
         urlSite: "https://traffic-lights-ff7de.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Traffic_Lights",
-        id: 7
+        id: 14
       },
       {
         images: java,
@@ -72,7 +129,7 @@ class WorksPage extends Component {
         urlSite: "https://github.com/EvgeniyBudaev/studentsControl-localhost-",
         urlGithub:
           "https://github.com/EvgeniyBudaev/studentsControl-localhost-",
-        id: 8
+        id: 15
       }
     ]
   };
