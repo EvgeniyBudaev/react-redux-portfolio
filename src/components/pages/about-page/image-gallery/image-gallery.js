@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './image-gallery.css';
 
+import pageProofCertificate from '../images/pageproof.jpg';
 import javasriptCertificate from '../images/javascript.png';
 import reactReduxCertificate from '../images/react-redux-udemy.jpg'
 import javaCertificate from '../images/java.png';
@@ -8,6 +9,7 @@ import javaOtusCertificate from '../images/javaOtus.jpeg';
 
 // import {CSSTransitionGroup} from 'react-transition-group';
 const ImageURL = [
+  pageProofCertificate,
   javasriptCertificate,
   reactReduxCertificate,
   javaCertificate,

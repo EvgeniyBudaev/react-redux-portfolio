@@ -99,7 +99,7 @@ class AboutPage extends Component {
 
               <div className="tag">
                 <span className="tag__hash">
-                  # Январь 2020 - Май 2020:
+                  # Январь 2020 - Июнь 2020:
               </span>
                 <span className="tag__title">
                   IFlex <br />
