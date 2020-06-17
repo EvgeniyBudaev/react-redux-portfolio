@@ -6,9 +6,11 @@ import javasriptCertificate from '../images/javascript.png';
 import reactReduxCertificate from '../images/react-redux-udemy.jpg'
 import javaCertificate from '../images/java.png';
 import javaOtusCertificate from '../images/javaOtus.jpeg';
+import jsSenior from '../images/jsSenior.jpg';
 
 // import {CSSTransitionGroup} from 'react-transition-group';
 const ImageURL = [
+  jsSenior,
   pageProofCertificate,
   javasriptCertificate,
   reactReduxCertificate,
