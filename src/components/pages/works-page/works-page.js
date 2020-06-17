@@ -44,7 +44,7 @@ class WorksPage extends Component {
       },
       {
         images: excel,
-        category: "pageProofs",
+        category: "javascript",
         urlSite: "https://javascipt-excel.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/js-excel",
         id: 3,
