@@ -22,6 +22,11 @@ import Card from "./card";
 import stoolGroup from "./images/stoolGroup.jpg";
 import sellavi from "./images/sellavi.jpg";
 import excel from "./images/excel.jpg";
+import jsStore from "./images/js-store.jpg";
+import mediumClone from "./images/mediumClone.jpg";
+import internetShopReactRedux from "./images/internetShopReactRedux.jpg"
+import reactPizza from "./images/reactPizza.jpg"
+import reactShoppingCart from "./images/reactShoppingCart.jpg"
 
 class WorksPage extends Component {
   state = {
@@ -29,130 +34,158 @@ class WorksPage extends Component {
     activeClass: " active",
     cards: [
       {
+        images: mediumClone,
+        category: "react",
+        urlSite: "https://react-hooks-2667d.firebaseapp.com/",
+        urlGithub: "https://github.com/EvgeniyBudaev/medium-clone",
+        id: 1,
+      },
+      {
+        images: internetShopReactRedux,
+        category: "react",
+        urlSite: "https://internet-shop-react-redux.firebaseapp.com/",
+        urlGithub: "https://github.com/EvgeniyBudaev/internet-shop-react-redux",
+        id: 2,
+      },
+      {
         images: stoolGroup,
         category: "pageProofs",
         urlSite: "https://stool-group-e10b1.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/StoolGroup",
-        id: 1,
+        id: 3,
       },
       {
         images: bali,
         category: "pageProofs",
         urlSite: "https://bali-80a86.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Bali",
-        id: 2,
+        id: 4,
       },
       {
         images: excel,
         category: "javascript",
         urlSite: "https://javascipt-excel.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/js-excel",
-        id: 3,
+        id: 5,
       },
       {
         images: surf,
         category: "pageProofs",
         urlSite: "https://westshore-8448b.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Surf",
-        id: 4,
+        id: 6,
       },
       {
         images: sellavi,
         category: "pageProofs",
         urlSite: "https://sellavi.firebaseapp.com/",
         urlGithub: "https://github.com/EvgeniyBudaev/Sellavi",
-        id: 5,
+        id: 7,
       },
       {
         images: moderno,
         category: "pageProofs",
         urlSite: "https://moderno-c05f7.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/moderno",
-        id: 6,
+        id: 8,
       },
       {
         images: quiz,
         category: "react",
         urlSite: "https://react-quiz-bb571.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/redux-quiz",
-        id: 7,
+        id: 9,
+      },
+      {
+        images: reactPizza,
+        category: "react",
+        urlSite: "https://github.com/EvgeniyBudaev/react-pizza",
+        urlGithub: "https://github.com/EvgeniyBudaev/react-pizza",
+        id: 10,
+      },
+      {
+        images: reactShoppingCart,
+        category: "react",
+        urlSite: "https://github.com/EvgeniyBudaev/react-shopping-cart",
+        urlGithub: "https://github.com/EvgeniyBudaev/react-shopping-cart",
+        id: 11,
       },
       {
         images: rwws,
         category: "react",
         urlSite: "https://github.com/EvgeniyBudaev/react-work-with-server",
         urlGithub: "https://github.com/EvgeniyBudaev/react-work-with-server",
-        id: 8,
+        id: 12,
       },
       {
         images: reactToDoListApp,
         category: "react",
         urlSite: "https://reacttodolistapp-dd1de.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/React_todoListApp",
-        id: 9,
+        id: 13,
       },
       {
         images: swedishBitterness,
         category: "pageProofs",
         urlSite: "https://swedish-bitterness.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Swedish_Bitterness",
-        id: 10,
+        id: 14,
       },
       {
         images: rosa,
         category: "pageProofs",
         urlSite: "https://budaev-rosa-cd52e.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Rosa",
-        id: 11,
+        id: 15,
       },
       {
         images: minimo,
         category: "pageProofs",
         urlSite: "https://minimo-da92b.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Minimo",
-        id: 12,
+        id: 16,
       },
       {
         images: tesla,
         category: "pageProofs",
         urlSite: "https://tesla-d22e6.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Tesla",
-        id: 13,
+        id: 17,
       },
       {
         images: martaUp,
         category: "pageProofs",
         urlSite: "https://martaup-fd339.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/MartaUP",
-        id: 14,
+        id: 18,
       },
       {
         images: bisLite,
         category: "pageProofs",
         urlSite: "https://bislite-9a1af.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/BisLite",
-        id: 15,
+        id: 19,
       },
       {
         images: balloon,
         category: "pageProofs",
         urlSite: "https://balloon-5f062.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Balloon",
-        id: 16,
+        id: 20,
       },
       {
         images: jetro,
         category: "pageProofs",
         urlSite: "https://jetro-62bf2.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/jetro",
-        id: 17,
+        id: 21,
       },
       {
         images: trafficLights,
         category: "javascript",
         urlSite: "https://traffic-lights-ff7de.firebaseapp.com",
         urlGithub: "https://github.com/EvgeniyBudaev/Traffic_Lights",
-        id: 18,
+        id: 22,
       },
       {
         images: java,
@@ -160,7 +193,15 @@ class WorksPage extends Component {
         urlSite: "https://github.com/EvgeniyBudaev/studentsControl-localhost-",
         urlGithub:
           "https://github.com/EvgeniyBudaev/studentsControl-localhost-",
-        id: 19,
+        id: 23,
+      },
+      {
+        images: jsStore,
+        category: "javascript",
+        urlSite: "https://github.com/EvgeniyBudaev/JavaScript-store",
+        urlGithub:
+          "https://github.com/EvgeniyBudaev/JavaScript-store",
+        id: 24,
       },
     ],
   };
